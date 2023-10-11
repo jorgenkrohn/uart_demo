@@ -14,5 +14,8 @@ Simulation is run by running /scripts/run.py
 - `main` branch contains a simple non self-checking testbench
 - `bfm` branch contains a testbench using UVVM BFM packages
 - `vvc` branch contains a testbench using UVVM VVCs
+- `vvc_nobugs` branch contains a testbench using UVVM VVCs, but with no bugs in the code
 
-There are three bugs in the source code. One can easily be detected by the VVC testbench, one is also easily detected by the BFM testbench and one can easily be detected by all three testbenches.
+# Excercise 
+There are one or more bugs in the code!
+Try to find them by first running from `main`, then from `bfm` and then from `vvc`
