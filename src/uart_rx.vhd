@@ -145,7 +145,7 @@ begin
         when START_BIT =>
           if baud_pulse = '1' then
             if uart_rxd_synced = '0' then
-              data_index <= 0;
+              data_index <= 7;
               state <= DATA;
             else
               -- Unexpected value on uart_rxd. Going back to IDLE
@@ -155,8 +155,8 @@ begin
         when DATA =>
           if baud_pulse = '1' then
             received_data(data_index) <= uart_rxd_synced;
-            if data_index < 7 then
-              data_index <= data_index + 1;
+            if data_index > 0 then
+              data_index <= data_index - 1;
             else
               state <= STOP_BIT;
             end if;
