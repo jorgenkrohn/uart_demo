@@ -58,7 +58,7 @@ begin
       empty         => fifo_empty
     );
 
-  s_axis_transmit_tready <= '1';
+  s_axis_transmit_tready <= not fifo_full;
 
   fifo_write <= s_axis_transmit_tvalid and s_axis_transmit_tready;
 
@@ -123,7 +123,7 @@ begin
             end if;
           end if;
         when STOP_BIT =>
-          uart_txd  <= '0';
+          uart_txd  <= '1';
           if baud_pulse = '1' then
             -- Disabling baud counter and go back to IDLE
             baud_generator_enable <= '0';
