@@ -1,0 +1,3 @@
+[submodule "lib/UVVM"]
+	path = lib/UVVM
+	url = https://github.com/UVVM/UVVM.git
