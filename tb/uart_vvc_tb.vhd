@@ -101,6 +101,9 @@ begin
 
     elsif run("multi_word_transmission") then
 
+      -- This test case will fill the FIFO. The FIFO has room for 8 words at a time, but the test sends 16 words as fast
+      -- as possible
+
       -- Storing random data in the data array
       for i in 0 to 15 loop
         v_data_array(i) := random(8);
@@ -126,6 +129,8 @@ begin
       await_completion(AXISTREAM_VVCT, C_RX_IDX, 10 ms);
 
     elsif run("simultaneous_transmission") then
+
+      -- This test case transmits and receives at the same time.
 
       -- Storing random data in the data array
       for i in 0 to 15 loop
