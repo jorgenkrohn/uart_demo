@@ -1,4 +1,6 @@
 from vunit import VUnit
+# import os
+# os.environ["VUNIT_SIMULATOR"] = "ghdl"
 
 # Create VUnit instance by parsing command line arguments
 vu = VUnit.from_argv()

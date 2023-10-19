@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Thu Oct 12 12:47:07 2023
+[*]
+[dumpfile] "C:\projects\uart_demo\scripts\vunit_out\test_output\lib.uart_manual_tb.all_da35f2e539747818c12503b0e1b28587dd927075\ghdl\wave.ghw"
+[dumpfile_mtime] "Thu Oct 12 12:40:52 2023"
+[dumpfile_size] 301626
+[savefile] "C:\projects\uart_demo\scripts\wave_manual_tb.gtkw"
+[timestart] 0
+[size] 2560 1377
+[pos] -347 -347
+*-34.006084 16380000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.uart_manual_tb.
+[sst_width] 341
+[signals_width] 238
+[sst_expanded] 1
+[sst_vpaned_height] 426
+@200
+-Transmit
+@22
+#{top.uart_manual_tb.s_axis_transmit_tdata[7:0]} top.uart_manual_tb.s_axis_transmit_tdata[7] top.uart_manual_tb.s_axis_transmit_tdata[6] top.uart_manual_tb.s_axis_transmit_tdata[5] top.uart_manual_tb.s_axis_transmit_tdata[4] top.uart_manual_tb.s_axis_transmit_tdata[3] top.uart_manual_tb.s_axis_transmit_tdata[2] top.uart_manual_tb.s_axis_transmit_tdata[1] top.uart_manual_tb.s_axis_transmit_tdata[0]
+@28
+top.uart_manual_tb.i_uart.s_axis_transmit_tready
+top.uart_manual_tb.i_uart.s_axis_transmit_tvalid
+top.uart_manual_tb.i_uart.i_uart_tx.uart_txd
+@22
+#{top.uart_manual_tb.received_data[7:0]} top.uart_manual_tb.received_data[7] top.uart_manual_tb.received_data[6] top.uart_manual_tb.received_data[5] top.uart_manual_tb.received_data[4] top.uart_manual_tb.received_data[3] top.uart_manual_tb.received_data[2] top.uart_manual_tb.received_data[1] top.uart_manual_tb.received_data[0]
+@200
+-Receive
+@22
+#{top.uart_manual_tb.transmit_data[7:0]} top.uart_manual_tb.transmit_data[7] top.uart_manual_tb.transmit_data[6] top.uart_manual_tb.transmit_data[5] top.uart_manual_tb.transmit_data[4] top.uart_manual_tb.transmit_data[3] top.uart_manual_tb.transmit_data[2] top.uart_manual_tb.transmit_data[1] top.uart_manual_tb.transmit_data[0]
+@28
+top.uart_manual_tb.i_uart.i_uart_rx.uart_rxd
+@23
+#{top.uart_manual_tb.i_uart.m_axis_receive_tdata[7:0]} top.uart_manual_tb.i_uart.m_axis_receive_tdata[7] top.uart_manual_tb.i_uart.m_axis_receive_tdata[6] top.uart_manual_tb.i_uart.m_axis_receive_tdata[5] top.uart_manual_tb.i_uart.m_axis_receive_tdata[4] top.uart_manual_tb.i_uart.m_axis_receive_tdata[3] top.uart_manual_tb.i_uart.m_axis_receive_tdata[2] top.uart_manual_tb.i_uart.m_axis_receive_tdata[1] top.uart_manual_tb.i_uart.m_axis_receive_tdata[0]
+@28
+top.uart_manual_tb.i_uart.m_axis_receive_tready
+top.uart_manual_tb.i_uart.m_axis_receive_tvalid
+[pattern_trace] 1
+[pattern_trace] 0
