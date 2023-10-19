@@ -131,6 +131,9 @@ begin
   begin
     test_runner_setup(runner, runner_cfg);
 
+    disable_log_msg(ID_PACKET_DATA);
+    disable_log_msg(ID_PACKET_PAYLOAD);
+
     -- Print the configuration to the log
     report_global_ctrl(VOID);
     report_msg_id_panel(VOID);
