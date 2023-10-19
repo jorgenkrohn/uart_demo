@@ -32,9 +32,9 @@ lib.add_source_files("../src/*.vhd")
 lib.add_source_files("../tb/*.vhd")
 
 # Adding test cases with different generics
-simultaneous_transmission = lib.test_bench("uart_vvc_tb").test("simultaneous_transmission")
+multi_word_transmission = lib.test_bench("uart_vvc_tb").test("multi_word_transmission")
 for baud, clk in product([57600, 115200], [100000000, 10000000]):
-  simultaneous_transmission.add_config(
+  multi_word_transmission.add_config(
     name=f"baud={baud}.clk={clk}",
     generics=dict(GC_BAUDRATE=baud, GC_CLK_FREQ=clk),
   )
