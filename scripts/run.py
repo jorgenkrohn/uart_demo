@@ -41,5 +41,9 @@ for baud, clk in product([57600, 115200], [100000000, 10000000]):
     generics=dict(GC_BAUDRATE=baud, GC_CLK_FREQ=clk),
   )
 
+# If using GHDL, setting the -frelaxed-rules compile flag
+#vu.set_compile_option("ghdl.a_flags", ["-frelaxed-rules"])
+#vu.set_sim_option("ghdl.elab_flags", ["-frelaxed-rules"])
+
 # Run vunit function
 vu.main()
